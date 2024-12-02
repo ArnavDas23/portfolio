@@ -1,0 +1,112 @@
+/************************* :ROOT **************************/
+
+:root {
+
+    /* FONTS */
+        --standard-font-size: 14px;
+        --standard-font-family: monospace, sans-serif;
+
+    /* COLORS */
+        --color-0: hsl(0, 0%, 0%);
+        --color-50: hsl(0, 0%, 50%);
+        --color-85: hsl(0, 0%, 85%);
+        --color-95: hsl(0, 0%, 95%);
+        --color-100: hsl(0, 0%, 100%);
+        --color-a-hover: hsl(0, 0%, 15%);
+        --color-a-active: hsl(100, 100%, 50%);
+
+    /* STRUCTURE */
+
+    --body-margin: 0px;
+    --body-display: flex;
+    --body-flex-flow: column nowrap;
+
+        --navbar-height: 50px;
+
+        --about-height: calc(100vh - var(--navbar-height));
+
+        --buffer-height: var(--navbar-height);
+
+        --work-height: 100vh;
+
+        --blog-height: 100vh;
+        
+        --contact-height: 100vh;
+
+}
+
+/************************** BODY **************************/
+
+body {
+    margin: var(--body-margin);
+    display: var(--body-display);
+    flex-flow: var(--body-flex-flow);
+    font-size: var(--standard-font-size);
+
+    font-family: var(--standard-font-family);
+}
+
+/************************* NAVBAR *************************/
+
+#navbar {
+    height: var(--navbar-height);
+
+    outline: 2px solid red;
+}
+
+/************************* ABOUT **************************/
+
+#about {
+    height: var(--about-height);
+    display: flex;
+    flex-flow: row nowrap;
+
+    outline: 2px solid red;
+}
+
+/************************* BUFFER *************************/
+
+#buffer {
+    height: var(--buffer-height);
+
+    outline: 2px solid red;
+}
+
+/************************** WORK **************************/
+
+#work {
+    height: var(--work-height);
+
+    outline: 2px solid red;
+}
+
+/************************** BLOG **************************/
+
+#blog {
+    height: var(--blog-height);
+
+    outline: 2px solid red;
+}
+
+/************************ CONTACT *************************/
+
+#contact {
+    height: var(--contact-height);
+
+    outline: 2px solid red;
+}
+
+/************************ SIDEBAR *************************/
+
+.sidebar {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 2px solid blue;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 24px;
+}
